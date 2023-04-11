@@ -10,9 +10,8 @@ const resolve = (dir) => path.resolve(__dirname, dir);
 
 // https://vitejs.dev/config/
 export default defineConfig((mode) => {
-  const isProduction = mode.mode !== 'development';
   return {
-    base: isProduction ? "/zhang.github-io/" : '',
+    base: "/zhang.github-io/",
     publicDir: resolve("static"),
     mode: "development",
     resolve: {
@@ -62,7 +61,7 @@ export default defineConfig((mode) => {
         template: "./index.html",
         inject: {
           data: {
-            scriptPrefix: isProduction ? "/zhang.github-io/" : '',
+            scriptPrefix: "/zhang.github-io/",
           },
         },
       }),
