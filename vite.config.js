@@ -9,7 +9,7 @@ const resolve = (dir) => path.resolve(__dirname, dir);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "https://github.com/zhangZzz-Free/zhang.github-io/tree/master/",
   publicDir: resolve("static"),
   resolve: {
     alias: {
