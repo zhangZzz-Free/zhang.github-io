@@ -32,6 +32,7 @@ export default defineUserConfig({
       },
     ],
   }),
+  base: '/zhang.github-io/',
 
   plugins: [
     blogPlugin({
