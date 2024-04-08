@@ -1,13 +1,13 @@
 ---
 home: true
-title: Home
+title: 主页
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: Start
-    link: /get-started.html
+  - text: 开始
+    link: /zh/get-started.html
     type: primary
 
-  - text: Introduction
+  - text: vuePress官网
     link: https://vuejs.press/guide/introduction.html
     type: secondary
 

@@ -1,36 +1,83 @@
-import { blogPlugin } from '@vuepress/plugin-blog'
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress'
-import { viteBundler } from '@vuepress/bundler-vite'
+import { blogPlugin } from '@vuepress/plugin-blog';
+import { defaultTheme } from '@vuepress/theme-default';
+import { defineUserConfig } from 'vuepress';
+import { viteBundler } from '@vuepress/bundler-vite';
 
 export default defineUserConfig({
   lang: 'en-US',
 
   title: 'zx-blog',
   description: 'My first VuePress Site',
+  
 
+  locales: {
+    '/': {
+      lang: 'en-US',
+      label: 'Languages',
+      description: 'My first VuePress Site',  
+      title: 'zx-us-blog',
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      label: '语言',
+      description: '我的第一个 VuePress 站点', 
+      title: 'zx-ch-blog',
+    },
+  },
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
-
-    navbar: [
-      '/',
-      {
-        text: 'Article',
-        link: '/article/',
+    locales: {
+      '/': {
+        selectLanguageText: 'English',
+        navbar: [
+          {
+            text: 'Home',
+            link: '/',
+          },
+          {
+            text: 'Article',
+            link: '/article/',
+          },
+          {
+            text: 'Category',
+            link: '/category/',
+          },
+          {
+            text: 'Tag',
+            link: '/tag/',
+          },
+          {
+            text: 'Timeline',
+            link: '/timeline/',
+          },
+        ],
       },
-      {
-        text: 'Category',
-        link: '/category/',
+      '/zh/': {
+        selectLanguageText: '简体中文',
+        navbar: [
+          {
+            text: '首页',
+            link: '/zh/',
+          },
+          {
+            text: '文章',
+            link: '/zh/article/',
+          },
+          {
+            text: '分类',
+            link: '/zh/category/',
+          },
+          {
+            text: '标签',
+            link: '/zh/tag/',
+          },
+          {
+            text: '时间线',
+            link: '/zh/timeline/',
+          },
+        ],
       },
-      {
-        text: 'Tag',
-        link: '/tag/',
-      },
-      {
-        text: 'Timeline',
-        link: '/timeline/',
-      },
-    ],
+    },
   }),
   base: '/zhang.github-io/',
 
@@ -104,19 +151,20 @@ export default defineUserConfig({
           // Sort pages with time and sticky
           sorter: (pageA, pageB) => {
             if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
-              return pageB.frontmatter.sticky - pageA.frontmatter.sticky
+              return pageB.frontmatter.sticky - pageA.frontmatter.sticky;
 
-            if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky) return -1
+            if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky)
+              return -1;
 
-            if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1
+            if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1;
 
-            if (!pageB.frontmatter.date) return 1
-            if (!pageA.frontmatter.date) return -1
+            if (!pageB.frontmatter.date) return 1;
+            if (!pageA.frontmatter.date) return -1;
 
             return (
               new Date(pageB.frontmatter.date).getTime() -
               new Date(pageA.frontmatter.date).getTime()
-            )
+            );
           },
         },
         {
@@ -139,4 +187,4 @@ export default defineUserConfig({
   ],
 
   bundler: viteBundler(),
-})
+});
