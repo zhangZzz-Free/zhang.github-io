@@ -2,86 +2,138 @@ import { blogPlugin } from '@vuepress/plugin-blog';
 import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
 import { viteBundler } from '@vuepress/bundler-vite';
+import { searchPlugin } from '@vuepress/plugin-search';
+import { findFile } from './utils/util';
 
 export default defineUserConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
 
   title: 'zx-blog',
   description: 'My first VuePress Site',
-  
 
   locales: {
     '/': {
-      lang: 'en-US',
-      label: 'Languages',
-      description: 'My first VuePress Site',  
-      title: 'zx-us-blog',
-    },
-    '/zh/': {
       lang: 'zh-CN',
-      label: '语言',
-      description: '我的第一个 VuePress 站点', 
+      description: '我的第一个 VuePress 站点',
       title: 'zx-ch-blog',
     },
+    '/en/': {
+      lang: 'en-US',
+      description: 'My first VuePress Site',
+      title: 'zx-us-blog',
+    },
   },
+
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
     locales: {
       '/': {
-        selectLanguageText: 'English',
-        navbar: [
-          {
-            text: 'Home',
-            link: '/',
-          },
-          {
-            text: 'Article',
-            link: '/article/',
-          },
-          {
-            text: 'Category',
-            link: '/category/',
-          },
-          {
-            text: 'Tag',
-            link: '/tag/',
-          },
-          {
-            text: 'Timeline',
-            link: '/timeline/',
-          },
-        ],
-      },
-      '/zh/': {
         selectLanguageText: '简体中文',
+        selectLanguageName: '简体中文',
         navbar: [
           {
             text: '首页',
-            link: '/zh/',
+            link: '/',
           },
+          // {
+          //   text: '文章',
+          //   link: '/article/',
+          // },
+          // {
+          //   text: '分类',
+          //   link: '/category/',
+          // },
+          // {
+          //   text: '标签',
+          //   link: '/tag/',
+          // },
+          // {
+          //   text: '时间线',
+          //   link: '/timeline/',
+          // },
+        ],
+      },
+      '/en/': {
+        selectLanguageText: 'English',
+        selectLanguageName: 'English',
+        navbar: [
           {
-            text: '文章',
-            link: '/zh/article/',
+            text: 'Home',
+            link: '/en/',
           },
-          {
-            text: '分类',
-            link: '/zh/category/',
-          },
-          {
-            text: '标签',
-            link: '/zh/tag/',
-          },
-          {
-            text: '时间线',
-            link: '/zh/timeline/',
-          },
+          // {
+          //   text: 'Article',
+          //   link: '/en/article/',
+          // },
+          // {
+          //   text: 'Category',
+          //   link: '/en/category/',
+          // },
+          // {
+          //   text: 'Tag',
+          //   link: '/en/tag/',
+          // },
+          // {
+          //   text: 'Timeline',
+          //   link: '/en/timeline/',
+          // },
         ],
       },
     },
+    // sidebar: [
+    //   // SidebarItem
+    //   {
+    //     text: 'Css',
+    //     link: '/guide/css/index.md',
+    //     children: [
+    //       // SidebarItem
+    //       {
+    //         text: 'css奇思秒想',
+    //         link: '/guide/css/cssExample.md',
+    //         collapsable: true,
+    //         children: [],
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     text: 'Javascript',
+    //     link: '/guide/js/index.md',
+    //   },
+    //   {
+    //     text: 'React',
+    //     link: '/guide/react/index.md',
+    //   },
+    //   {
+    //     text: 'Vue',
+    //     link: '/guide/vue/index.md',
+    //     children: [
+    //       {
+    //         text: '奇思妙想小箭头',
+    //         link: '/guide/vue/arrow.md',
+    //         collapsable: true,
+    //         // children: findFile('/guide/vue/arrow.md'),
+    //       },
+    //     ],
+    //   },
+    // ],
+    sidebarDepth: 2
   }),
+
   base: '/zhang.github-io/',
 
   plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+        '/en/': {
+          placeholder: 'Search',
+        },
+      },
+      // 排除首页
+      isSearchable: (page) => page.path !== '/',
+    }),
     blogPlugin({
       // Only files under posts are articles
       filter: ({ filePathRelative }) =>

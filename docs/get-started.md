@@ -1,46 +1,28 @@
-# Get Started
+# 目录
 
-This is a normal page, which contains VuePress basics.
+## Css
 
-## Pages
+### Css 奇思妙想
 
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
+## Javascript
 
-See [routing][] for more details.
+### Js 奇思妙想
 
-## Content
+This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
 
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
+[default-theme-home]: /guide/css/cssExample.md
 
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
+## Typescript
 
-## Configuration
+## Vue
 
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
+### [① 奇思妙想小箭头][vue-arrow-example]
 
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
+[vue-arrow-example]: /guide/vue/arrow.md
 
-Meanwhile, you can also add configuration per page with [frontmatter][].
+## React
 
-## Layouts and customization
+## 请求优化
 
-Here are common configuration controlling layout of `@vuepress/theme-default`:
-
-- [navbar][]
-- [sidebar][]
-
-Check [default theme docs][default-theme] for full reference.
-
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
-
-[routing]: https://vuejs.press/guide/page.html#routing
-[content]: https://vuejs.press/guide/page.html#content
-[synatex-extensions]: https://vuejs.press/guide/markdown.html#syntax-extensions
-[vue-feature]: https://vuejs.press/guide/markdown.html#using-vue-in-markdown
-[config]: https://vuejs.press/guide/configuration.html#client-config-file
-[client-config]: https://vuejs.press/guide/configuration.html#client-config-file
-[frontmatter]: https://vuejs.press/guide/page.html#frontmatter
-[navbar]: https://vuejs.press/reference/default-theme/config.html#navbar
-[sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
-[default-theme]: https://vuejs.press/reference/default-theme/
-[style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+### [① 接口防重提交][repeat-request]
+[repeat-request]: /guide/request/repeatRequest.md

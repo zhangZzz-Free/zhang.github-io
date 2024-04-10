@@ -6,6 +6,10 @@ import Timeline from './layouts/Timeline.vue'
 
 export default defineClientConfig({
   // we provide some blog layouts
+  enhance({ app, router, siteData }) {
+
+  },
+  setup() {},
   layouts: {
     Article,
     Category,

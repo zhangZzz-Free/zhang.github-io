@@ -6,7 +6,8 @@ import clientConfig4 from 'G:/HTMLFile/Vue/zx-blog/node_modules/.pnpm/@vuepress+
 import clientConfig5 from 'G:/HTMLFile/Vue/zx-blog/node_modules/.pnpm/@vuepress+plugin-nprogress@2.0.0-rc.21_vuepress@2.0.0-rc.9/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig6 from 'G:/HTMLFile/Vue/zx-blog/node_modules/.pnpm/@vuepress+plugin-theme-data@2.0.0-rc.21_vuepress@2.0.0-rc.9/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig7 from 'G:/HTMLFile/Vue/zx-blog/node_modules/.pnpm/@vuepress+theme-default@2.0.0-rc.24_vuepress@2.0.0-rc.9/node_modules/@vuepress/theme-default/lib/client/config.js'
-import clientConfig8 from 'G:/HTMLFile/Vue/zx-blog/docs/.vuepress/client.js'
+import clientConfig8 from 'G:/HTMLFile/Vue/zx-blog/node_modules/.pnpm/@vuepress+plugin-search@2.0.0-rc.24_vuepress@2.0.0-rc.9/node_modules/@vuepress/plugin-search/lib/client/config.js'
+import clientConfig9 from 'G:/HTMLFile/Vue/zx-blog/docs/.vuepress/client.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -18,4 +19,5 @@ export const clientConfigs = [
   clientConfig6,
   clientConfig7,
   clientConfig8,
+  clientConfig9,
 ]

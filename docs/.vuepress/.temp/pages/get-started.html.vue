@@ -1,23 +1,15 @@
-<template><div><h1 id="get-started" tabindex="-1"><a class="header-anchor" href="#get-started"><span>Get Started</span></a></h1>
-<p>This is a normal page, which contains VuePress basics.</p>
-<h2 id="pages" tabindex="-1"><a class="header-anchor" href="#pages"><span>Pages</span></a></h2>
-<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>
-<p>See <a href="https://vuejs.press/guide/page.html#routing" target="_blank" rel="noopener noreferrer">routing<ExternalLinkIcon/></a> for more details.</p>
-<h2 id="content" tabindex="-1"><a class="header-anchor" href="#content"><span>Content</span></a></h2>
-<p>Every markdown file <a href="https://vuejs.press/guide/page.html#content" target="_blank" rel="noopener noreferrer">will be rendered to HTML, then converted to a Vue SFC<ExternalLinkIcon/></a>.</p>
-<p>VuePress support basic markdown syntax and <a href="https://vuejs.press/guide/markdown.html#syntax-extensions" target="_blank" rel="noopener noreferrer">some extensions<ExternalLinkIcon/></a>, you can also <a href="https://vuejs.press/guide/markdown.html#using-vue-in-markdown" target="_blank" rel="noopener noreferrer">use Vue features<ExternalLinkIcon/></a> in it.</p>
-<h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h2>
-<p>VuePress use a <code v-pre>.vuepress/config.js</code>(or .ts) file as <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">site configuration<ExternalLinkIcon/></a>, you can use it to config your site.</p>
-<p>For <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">client side configuration<ExternalLinkIcon/></a>, you can create <code v-pre>.vuepress/client.js</code>(or .ts).</p>
-<p>Meanwhile, you can also add configuration per page with <a href="https://vuejs.press/guide/page.html#frontmatter" target="_blank" rel="noopener noreferrer">frontmatter<ExternalLinkIcon/></a>.</p>
-<h2 id="layouts-and-customization" tabindex="-1"><a class="header-anchor" href="#layouts-and-customization"><span>Layouts and customization</span></a></h2>
-<p>Here are common configuration controlling layout of <code v-pre>@vuepress/theme-default</code>:</p>
-<ul>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#navbar" target="_blank" rel="noopener noreferrer">navbar<ExternalLinkIcon/></a></li>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#sidebar" target="_blank" rel="noopener noreferrer">sidebar<ExternalLinkIcon/></a></li>
-</ul>
-<p>Check <a href="https://vuejs.press/reference/default-theme/" target="_blank" rel="noopener noreferrer">default theme docs<ExternalLinkIcon/></a> for full reference.</p>
-<p>You can <a href="https://vuejs.press/reference/default-theme/styles.html#style-file" target="_blank" rel="noopener noreferrer">add extra style<ExternalLinkIcon/></a> with <code v-pre>.vuepress/styles/index.scss</code> file.</p>
+<template><div><h1 id="目录" tabindex="-1"><a class="header-anchor" href="#目录"><span>目录</span></a></h1>
+<h2 id="css" tabindex="-1"><a class="header-anchor" href="#css"><span>Css</span></a></h2>
+<h3 id="css-奇思妙想" tabindex="-1"><a class="header-anchor" href="#css-奇思妙想"><span>Css 奇思妙想</span></a></h3>
+<h2 id="javascript" tabindex="-1"><a class="header-anchor" href="#javascript"><span>Javascript</span></a></h2>
+<h3 id="js-奇思妙想" tabindex="-1"><a class="header-anchor" href="#js-奇思妙想"><span>Js 奇思妙想</span></a></h3>
+<p>This is the content of home page. Check <RouteLink to="/guide/css/cssExample.html">Home Page Docs</RouteLink> for more details.</p>
+<h2 id="typescript" tabindex="-1"><a class="header-anchor" href="#typescript"><span>Typescript</span></a></h2>
+<h2 id="vue" tabindex="-1"><a class="header-anchor" href="#vue"><span>Vue</span></a></h2>
+<h3 id="_1-奇思妙想小箭头" tabindex="-1"><a class="header-anchor" href="#_1-奇思妙想小箭头"><span><RouteLink to="/guide/vue/arrow.html">① 奇思妙想小箭头</RouteLink></span></a></h3>
+<h2 id="react" tabindex="-1"><a class="header-anchor" href="#react"><span>React</span></a></h2>
+<h2 id="请求优化" tabindex="-1"><a class="header-anchor" href="#请求优化"><span>请求优化</span></a></h2>
+<h3 id="_1-接口防重提交" tabindex="-1"><a class="header-anchor" href="#_1-接口防重提交"><span><RouteLink to="/guide/request/repeatRequest.html">① 接口防重提交</RouteLink></span></a></h3>
 </div></template>
 
 
