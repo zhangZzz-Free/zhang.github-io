@@ -1,19 +1,19 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: /logo.png
 actions:
-  - text: Start
+  - text: Entering a Wonderful Journey
     link: /en/get-started.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
-    type: secondary
+  # - text: Introduction
+  #   link: https://vuejs.press/guide/introduction.html
+  #   type: secondary
 
 features:
-  - title: 小东西罢了
-    details: 记录一些小东西，方便以后查看。
+  - title: It's just a small thing
+    details: Record some small things for future reference。
   - title: Vue-Powered
     details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
 

@@ -1,5 +1,5 @@
 import comp from "G:/HTMLFile/Vue/zx-blog/docs/.vuepress/.temp/pages/guide/css/cssExample.html.vue"
-const data = JSON.parse("{\"path\":\"/guide/css/cssExample.html\",\"title\":\"css奇思妙想\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"guide/css/cssExample.md\",\"excerpt\":\"\\n\"}")
+const data = JSON.parse("{\"path\":\"/guide/css/cssExample.html\",\"title\":\"css奇思妙想\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1712733284000,\"contributors\":[{\"name\":\"zx\",\"email\":\"1549566737@qq.com\",\"commits\":1}]},\"filePathRelative\":\"guide/css/cssExample.md\",\"excerpt\":\"\\n\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

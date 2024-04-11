@@ -1,7 +1,7 @@
 ---
 home: true
 title: 主页
-heroImage: https://vuejs.press/images/hero.png
+heroImage: /logo.png
 actions:
   - text: 进入奇妙之旅
     link: /get-started.html

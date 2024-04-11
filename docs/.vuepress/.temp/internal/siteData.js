@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/zhang.github-io/\",\"lang\":\"zh-CN\",\"title\":\"zx-blog\",\"description\":\"My first VuePress Site\",\"head\":[],\"locales\":{\"/\":{\"lang\":\"zh-CN\",\"description\":\"我的第一个 VuePress 站点\",\"title\":\"zx-ch-blog\"},\"/en/\":{\"lang\":\"en-US\",\"description\":\"My first VuePress Site\",\"title\":\"zx-us-blog\"}}}")
+export const siteData = JSON.parse("{\"base\":\"/zhang.github-io/\",\"lang\":\"zh-CN\",\"title\":\"\",\"description\":\"\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/zhang.github-io/logo.png\",\"type\":\"image/x-icon\"}]],\"locales\":{\"/\":{\"lang\":\"zh-CN\",\"title\":\"妈妈！我今天还想在学一遍\",\"description\":\"知识分享博客\"},\"/en/\":{\"lang\":\"en-US\",\"title\":\"Mom! I want to learn again today\",\"description\":\"content share blog\"}}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

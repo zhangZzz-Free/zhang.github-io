@@ -3,29 +3,32 @@ import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
 import { viteBundler } from '@vuepress/bundler-vite';
 import { searchPlugin } from '@vuepress/plugin-search';
-import { findFile } from './utils/util';
 
 export default defineUserConfig({
   lang: 'zh-CN',
 
-  title: 'zx-blog',
-  description: 'My first VuePress Site',
+  head: [
+    [
+      'link',
+      { rel: 'icon', href: '/zhang.github-io/logo.png', type: 'image/x-icon' },
+    ],
+  ],
 
   locales: {
     '/': {
       lang: 'zh-CN',
-      description: '我的第一个 VuePress 站点',
-      title: 'zx-ch-blog',
+      title: '妈妈！我今天还想在学一遍',
+      description: '知识分享博客',
     },
     '/en/': {
       lang: 'en-US',
-      description: 'My first VuePress Site',
-      title: 'zx-us-blog',
+      title: 'Mom! I want to learn again today',
+      description: 'content share blog',
     },
   },
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/logo.png',
     locales: {
       '/': {
         selectLanguageText: '简体中文',
@@ -35,10 +38,10 @@ export default defineUserConfig({
             text: '首页',
             link: '/',
           },
-          // {
-          //   text: '文章',
-          //   link: '/article/',
-          // },
+          {
+            text: '目录',
+            link: '/get-started',
+          },
           // {
           //   text: '分类',
           //   link: '/category/',
@@ -61,6 +64,10 @@ export default defineUserConfig({
             text: 'Home',
             link: '/en/',
           },
+          {
+            text: 'Catalog',
+            link: '/get-started',
+          },
           // {
           //   text: 'Article',
           //   link: '/en/article/',
@@ -80,43 +87,7 @@ export default defineUserConfig({
         ],
       },
     },
-    // sidebar: [
-    //   // SidebarItem
-    //   {
-    //     text: 'Css',
-    //     link: '/guide/css/index.md',
-    //     children: [
-    //       // SidebarItem
-    //       {
-    //         text: 'css奇思秒想',
-    //         link: '/guide/css/cssExample.md',
-    //         collapsable: true,
-    //         children: [],
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     text: 'Javascript',
-    //     link: '/guide/js/index.md',
-    //   },
-    //   {
-    //     text: 'React',
-    //     link: '/guide/react/index.md',
-    //   },
-    //   {
-    //     text: 'Vue',
-    //     link: '/guide/vue/index.md',
-    //     children: [
-    //       {
-    //         text: '奇思妙想小箭头',
-    //         link: '/guide/vue/arrow.md',
-    //         collapsable: true,
-    //         // children: findFile('/guide/vue/arrow.md'),
-    //       },
-    //     ],
-    //   },
-    // ],
-    sidebarDepth: 2
+    sidebarDepth: 2,
   }),
 
   base: '/zhang.github-io/',

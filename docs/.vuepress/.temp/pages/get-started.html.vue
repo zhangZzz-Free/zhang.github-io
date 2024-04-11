@@ -6,7 +6,8 @@
 <p>This is the content of home page. Check <RouteLink to="/guide/css/cssExample.html">Home Page Docs</RouteLink> for more details.</p>
 <h2 id="typescript" tabindex="-1"><a class="header-anchor" href="#typescript"><span>Typescript</span></a></h2>
 <h2 id="vue" tabindex="-1"><a class="header-anchor" href="#vue"><span>Vue</span></a></h2>
-<h3 id="_1-奇思妙想小箭头" tabindex="-1"><a class="header-anchor" href="#_1-奇思妙想小箭头"><span><RouteLink to="/guide/vue/arrow.html">① 奇思妙想小箭头</RouteLink></span></a></h3>
+<h3 id="_1-源码解析" tabindex="-1"><a class="header-anchor" href="#_1-源码解析"><span><RouteLink to="/guide/vue/sourceCode.html">① 源码解析</RouteLink></span></a></h3>
+<h3 id="_2-奇思妙想小箭头" tabindex="-1"><a class="header-anchor" href="#_2-奇思妙想小箭头"><span><RouteLink to="/guide/vue/arrow.html">② 奇思妙想小箭头</RouteLink></span></a></h3>
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react"><span>React</span></a></h2>
 <h2 id="请求优化" tabindex="-1"><a class="header-anchor" href="#请求优化"><span>请求优化</span></a></h2>
 <h3 id="_1-接口防重提交" tabindex="-1"><a class="header-anchor" href="#_1-接口防重提交"><span><RouteLink to="/guide/request/repeatRequest.html">① 接口防重提交</RouteLink></span></a></h3>
