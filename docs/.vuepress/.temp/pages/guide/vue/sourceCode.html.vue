@@ -1,4 +1,4 @@
-<template><div><h1 id="vue-源码与进阶测试题" tabindex="-1"><a class="header-anchor" href="#vue-源码与进阶测试题"><span>Vue 源码与进阶测试题</span></a></h1>
+<template><div><h1 id="vue-源码" tabindex="-1"><a class="header-anchor" href="#vue-源码"><span>Vue 源码</span></a></h1>
 <h2 id="_1-为什么-vue-不再使用-mixin-了" tabindex="-1"><a class="header-anchor" href="#_1-为什么-vue-不再使用-mixin-了"><span>1. 为什么 Vue 不再使用 mixin 了</span></a></h2>
 <h3 id="_1-1-命名冲突" tabindex="-1"><a class="header-anchor" href="#_1-1-命名冲突"><span>1.1 命名冲突</span></a></h3>
 <p>我们看到了 mixin 模式如何在运行时合并两个对象。如果他们两个都共享同名属性，会发生什么？</p>

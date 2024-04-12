@@ -28,3 +28,8 @@ This is the content of home page. Check [Home Page Docs][default-theme-home] for
 
 ### [① 接口防重提交][repeat-request]
 [repeat-request]: /guide/request/repeatRequest.md
+
+## 工程化
+
+### [① 模块化][engineering-module]
+[engineering-module]: /guide/engineering/module.md

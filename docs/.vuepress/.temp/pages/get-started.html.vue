@@ -11,6 +11,8 @@
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react"><span>React</span></a></h2>
 <h2 id="请求优化" tabindex="-1"><a class="header-anchor" href="#请求优化"><span>请求优化</span></a></h2>
 <h3 id="_1-接口防重提交" tabindex="-1"><a class="header-anchor" href="#_1-接口防重提交"><span><RouteLink to="/guide/request/repeatRequest.html">① 接口防重提交</RouteLink></span></a></h3>
+<h2 id="工程化" tabindex="-1"><a class="header-anchor" href="#工程化"><span>工程化</span></a></h2>
+<h3 id="_1-模块化" tabindex="-1"><a class="header-anchor" href="#_1-模块化"><span><RouteLink to="/guide/engineering/module.html">① 模块化</RouteLink></span></a></h3>
 </div></template>
 
 

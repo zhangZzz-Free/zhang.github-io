@@ -82,6 +82,21 @@ export const searchIndex = [
             "children": []
           }
         ]
+      },
+      {
+        "level": 2,
+        "title": "工程化",
+        "slug": "工程化",
+        "link": "#工程化",
+        "children": [
+          {
+            "level": 3,
+            "title": "① 模块化",
+            "slug": "_1-模块化",
+            "link": "#_1-模块化",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/get-started.html",
@@ -514,9 +529,154 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/guide/js/",
+    "title": "模块化详解",
+    "headers": [
+      {
+        "level": 2,
+        "title": "发展史",
+        "slug": "发展史",
+        "link": "#发展史",
+        "children": [
+          {
+            "level": 3,
+            "title": "第一阶段",
+            "slug": "第一阶段",
+            "link": "#第一阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "第二阶段",
+            "slug": "第二阶段",
+            "link": "#第二阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "第三阶段",
+            "slug": "第三阶段",
+            "link": "#第三阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "第四阶段",
+            "slug": "第四阶段",
+            "link": "#第四阶段",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "CommonJS",
+        "slug": "commonjs",
+        "link": "#commonjs",
+        "children": [
+          {
+            "level": 3,
+            "title": "模块导出",
+            "slug": "模块导出",
+            "link": "#模块导出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "模块导出",
+            "slug": "模块导出-1",
+            "link": "#模块导出-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "CommomJS 规范",
+            "slug": "commomjs-规范",
+            "link": "#commomjs-规范",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "nodejs 对 CommonJS 的实现",
+            "slug": "nodejs-对-commonjs-的实现",
+            "link": "#nodejs-对-commonjs-的实现",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "实现伪代码",
+            "slug": "实现伪代码",
+            "link": "#实现伪代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "CommonJs 为啥不能在浏览器中使用",
+        "slug": "commonjs-为啥不能在浏览器中使用",
+        "link": "#commonjs-为啥不能在浏览器中使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "AMD & CMD",
+        "slug": "amd-cmd",
+        "link": "#amd-cmd",
+        "children": [
+          {
+            "level": 3,
+            "title": "AMD",
+            "slug": "amd",
+            "link": "#amd",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "CMD",
+            "slug": "cmd",
+            "link": "#cmd",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "ES6 模块化",
+        "slug": "es6-模块化",
+        "link": "#es6-模块化",
+        "children": [
+          {
+            "level": 3,
+            "title": "特点",
+            "slug": "特点",
+            "link": "#特点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "基本导入导出",
+            "slug": "基本导入导出",
+            "link": "#基本导入导出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "默认导入导出",
+            "slug": "默认导入导出",
+            "link": "#默认导入导出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "其他细节",
+            "slug": "其他细节",
+            "link": "#其他细节",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/guide/engineering/module.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -524,6 +684,13 @@ export const searchIndex = [
     "title": "",
     "headers": [],
     "path": "/guide/react/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/guide/js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -638,7 +805,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 源码与进阶测试题",
+    "title": "Vue 源码",
     "headers": [
       {
         "level": 2,
