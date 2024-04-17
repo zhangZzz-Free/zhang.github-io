@@ -33,3 +33,9 @@ This is the content of home page. Check [Home Page Docs][default-theme-home] for
 
 ### [① 模块化][engineering-module]
 [engineering-module]: /guide/engineering/module.md
+
+### [② 包管理器][engineering-package-manage]
+[engineering-package-manage]: /guide/engineering/packageManage.md
+
+### [③ vite打包配置][engineering-vite-config]
+[engineering-vite-config]: /guide/engineering/viteConfig.md

@@ -13,6 +13,8 @@
 <h3 id="_1-接口防重提交" tabindex="-1"><a class="header-anchor" href="#_1-接口防重提交"><span><RouteLink to="/guide/request/repeatRequest.html">① 接口防重提交</RouteLink></span></a></h3>
 <h2 id="工程化" tabindex="-1"><a class="header-anchor" href="#工程化"><span>工程化</span></a></h2>
 <h3 id="_1-模块化" tabindex="-1"><a class="header-anchor" href="#_1-模块化"><span><RouteLink to="/guide/engineering/module.html">① 模块化</RouteLink></span></a></h3>
+<h3 id="_2-包管理器" tabindex="-1"><a class="header-anchor" href="#_2-包管理器"><span><RouteLink to="/guide/engineering/packageManage.html">② 包管理器</RouteLink></span></a></h3>
+<h3 id="_3-vite打包配置" tabindex="-1"><a class="header-anchor" href="#_3-vite打包配置"><span><RouteLink to="/guide/engineering/viteConfig.html">③ vite打包配置</RouteLink></span></a></h3>
 </div></template>
 
 
