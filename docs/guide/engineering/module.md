@@ -142,7 +142,7 @@ CommonJS 的出现打开了前端开发者的思路
   <img src="/images/engineering/engineering-3.png" />
 </p>
 
-### 模块导出
+### 模块导入
 
 当需要使用一个模块时，使用的是该模块暴露的部分（导出的部分），隐藏的部分是永远无法使用的。
 

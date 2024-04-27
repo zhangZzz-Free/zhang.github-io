@@ -603,9 +603,9 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "模块导出",
-            "slug": "模块导出-1",
-            "link": "#模块导出-1",
+            "title": "模块导入",
+            "slug": "模块导入",
+            "link": "#模块导入",
             "children": []
           },
           {
@@ -1002,6 +1002,13 @@ export const searchIndex = [
             "title": "使用 umd",
             "slug": "使用-umd",
             "link": "#使用-umd",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "format esm 但是引入的包是 umd",
+            "slug": "format-esm-但是引入的包是-umd",
+            "link": "#format-esm-但是引入的包是-umd",
             "children": []
           }
         ]

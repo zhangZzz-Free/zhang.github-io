@@ -103,7 +103,7 @@
 <p style="text-align: center">
   <img src="/images/engineering/engineering-3.png" />
 </p>
-<h3 id="模块导出-1" tabindex="-1"><a class="header-anchor" href="#模块导出-1"><span>模块导出</span></a></h3>
+<h3 id="模块导入" tabindex="-1"><a class="header-anchor" href="#模块导入"><span>模块导入</span></a></h3>
 <p>当需要使用一个模块时，使用的是该模块暴露的部分（导出的部分），隐藏的部分是永远无法使用的。</p>
 <p><strong>当通过某种语法或 api 去使用一个模块时，这个过程叫做模块的导入</strong></p>
 <h3 id="commomjs-规范" tabindex="-1"><a class="header-anchor" href="#commomjs-规范"><span>CommomJS 规范</span></a></h3>

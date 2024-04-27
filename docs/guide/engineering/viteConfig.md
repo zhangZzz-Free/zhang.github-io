@@ -81,6 +81,10 @@ export default defineConfig({
 
 使用 umd 包时，需要配置 external，因为 umd 包是全局变量注入的，所以需要配置 external，会在全局上挂载 Vue，VueRouter 等。
 
+配置 rollup globals 和 external 只适合打包结果是 umd/iife 格式，如果是 esm 格式，则无法使用。
+
+如果通过插件的方式
+
 具体代码如下
 
 ```js
@@ -111,13 +115,66 @@ export default defineConfig({
         format: 'umd',
         // 注意 umd 模式 无法设置 manualChunks,
         globals: {
-          vue: 'vue',
-          'vue-demi': 'vue-demi',
-          'vue-router': 'vue-router',
-          pinia: 'pinia'
+          vue: 'Vue',
+          'vue-demi': 'VueDemi',
+          'vue-router': 'VueRouter',
+          pinia: 'Pinia'
         }
       },
       external: ['vue', 'vue-demi', 'vue-router', 'pinia']
+    }
+  },
+  optimizeDeps: {
+    include: isProd ? ['vue', 'vue-demi', 'vue-router', 'pinia'] : []
+    // force: false // 强制进行依赖预构建
+  }
+})
+
+
+// html 模板 和 es 导入方式一致
+```
+
+### format esm 但是引入的包是 umd
+
+```js
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import { viteExternalsPlugin } from 'vite-plugin-externals';
+import AutoImport from 'unplugin-auto-import/vite';
+
+export default defineConfig({
+  plugins: [
+    ...,
+    AutoImport({
+      // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等 会导致 打包后，方法无法执行
+      // imports: ['vue', 'vue-router'],
+    }),
+    createHtmlPlugin({
+      minify: true,
+      template: 'index.html',
+      inject: {
+        data: {
+          injectScript: `
+            <script src="/static/vue.global.js"></script>
+            <script src="/static/vueDemi.global.js"></script>
+            <script src="/static/vueRouter.global.js"></script>
+            <script src="/static/pinia.global.js"></script>
+          `
+        }
+      }
+    }),
+    viteExternalsPlugin({
+      vue: 'Vue',
+      'vue-demi': 'VueDemi',
+      'vue-router': 'VueRouter',
+      pinia: 'Pinia',
+    })
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        format: 'esm',
+      },
     }
   },
   optimizeDeps: {
